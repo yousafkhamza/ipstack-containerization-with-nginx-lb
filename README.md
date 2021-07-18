@@ -3,11 +3,11 @@
 
 ---
 ## Description
-It's a sample IP location finding the website and that the website fetched the data from ipstack website. Aso, I have containerized this website and also, I included a nginx and redis containers. Redis act as a cache and Nginx act as a load balancer servers because we are using three ipstack containers for efficient working. Also, you can easily setup this containers to your environment because I wrote the above details as a docker-compose.
+It's a sample IP location finding the website and that the website fetched the data from ipstack website. Aso, I have containerized this website and also, I included Nginx and Redis containers. Redis act as a cache and Nginx act as a load balancer server because we are using three ipstack containers for efficient working. Also, you can easily set up these containers into your environment because I wrote the above details as a docker-compose. Furthermore, the website is created using python and it's just a demonstration. 
 
 ----
 ## Feature
-- IP-Location finding website (Just A demonstration)
+- IP-Location finding website (Python) (Just a demonstration)
 - Easy to migrate everywhere 
 - Container load balanced (Nginx)
 - All containers are spin up with a single command
