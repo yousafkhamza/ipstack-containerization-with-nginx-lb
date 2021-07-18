@@ -3,7 +3,7 @@
 
 ---
 ## Description
-It's a simple IP location finding the website and that this website IP location database is from the ipstack site. Also, this was implemented with the help of docker and I wrote the complete container as a docker file. Also, there have 3 isolated ipstack containers one cache storing server(Redis). Also, I built an Nginx server to act as a load balancer of the ipstack servers. 
+It's a simple IP location finding website and that this website IP location database is from the ipstack site. Also, this was implemented with the help of docker and I wrote the complete container as a docker file. Also, there have 3 isolated ipstack containers one cache storing server(Redis). Also, I built an Nginx server to act as a load balancer of the ipstack servers. 
 
 ----
 ## Feature
@@ -220,7 +220,7 @@ IPSTACK_KEY=a37f9a05417225606d66         <----------- please replace your ipstac
 
 ----
 ## Conclusion
-it's a sample IP-location website and anyone can easy to set up this project on your environment with the help of docker-compose and containerization. Also, this project includes 3 IP location lookup (ipstack) containers, and that three containers are store/fetch data to a common cache server (Redis). Also, the 3 containers are connected with an Nginx server, and that server act as a load balancer, and this server is only connected with the outside world.
+it's a sample IP-location website and anyone can easy to set up this iplocation project on your environment with the help of docker-compose and containerization. Also, this project includes 3 IP-location lookup (ipstack) containers for effectivly working and that can handle more clients, and that three containers datas store/fetch to a common cache server (Redis). Also, the 3 containers are connected with an Nginx server, and that server act as a load balancer, and this server is only connected with the outside world.
 
 ### ⚙️ Connect with Me 
 
