@@ -14,8 +14,8 @@ It's a simple iplocation finding website and that this website iplocation databa
 
 ---
 ## Includes
-5 Containers for LAMP (IP-Stack,Redis, Nginx(Load Balancer))
-1 Network (For Container interconnecting)
+- 5 Containers for LAMP (IP-Stack,Redis, Nginx(Load Balancer))
+- 1 Network (For Container interconnecting)
 
 ----
 ## Pre-Requests
