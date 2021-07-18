@@ -44,7 +44,7 @@ docker-compose version
 > you guys can use [play with Docker](https://labs.play-with-docker.com/) which includes pre-installed docker and compose. It looks like a terminal and it's built from alpine OS. So, it's just used for learning purpose so who you guys can use 4hrs session without any additional installation.
 
 ## How to get IPstack API
-- Please go through the [ipstack](https://ipstack.com/) and click "_GET FREE API KEY_" on the top right corner. 
+> Please go through the [ipstack](https://ipstack.com/) and click "_GET FREE API KEY_" on the top right corner. 
 ![alt text](https://i.ibb.co/FJwjZWP/ipstack.png)
 
 _vim env.dev_
