@@ -3,7 +3,7 @@
 
 ---
 ## Description
-It's a simple IP location finding website and that this website IP location database is from the ipstack site. Also, this was implemented with the help of docker and I wrote the complete container as a docker file. Also, there have 3 isolated ipstack containers one cache storing server(Redis). Also, I built an Nginx server to act as a load balancer of the ipstack servers. 
+It's a sample IP location finding the website and that the website fetched the data from ipstack website. Aso, I have containerized this website and also, I included a nginx and redis containers. Redis act as a cache and Nginx act as a load balancer servers because we are using three ipstack containers for efficient working. Also, you can easily setup this containers to your environment because I wrote the above details as a docker-compose.
 
 ----
 ## Feature
