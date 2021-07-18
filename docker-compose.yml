@@ -1,0 +1,59 @@
+version: '3'
+services:
+
+  nginxlb:
+    image: nginx:alpine
+    container_name: nginx
+    restart: always
+    ports:
+      - "80:80"
+    networks:
+      - ipstack
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+
+  redis:
+    image: redis:latest
+    container_name: redis
+    restart: always
+    networks:
+      - ipstack
+
+  ipstack1:
+    image: yousafkhamza/ipstack:latest
+    container_name: ipstack1
+    restart: always
+    depends_on:
+      - redis
+    networks:
+      - ipstack
+    environment:
+      CACHING_SERVER: redis 
+      IPSTACK_KEY: "${IPSTACK_KEY}"
+
+  ipstack2:
+    image: yousafkhamza/ipstack:latest
+    container_name: ipstack2
+    restart: always
+    depends_on:
+      - redis
+    networks:
+      - ipstack
+    environment:
+      CACHING_SERVER: redis 
+      IPSTACK_KEY: "${IPSTACK_KEY}"
+
+  ipstack3:
+    image: yousafkhamza/ipstack:latest
+    container_name: ipstack3
+    restart: always
+    depends_on:
+      - redis
+    networks:
+      - ipstack
+    environment:
+      CACHING_SERVER: redis 
+      IPSTACK_KEY: "${IPSTACK_KEY}"
+           
+networks:
+  ipstack:
