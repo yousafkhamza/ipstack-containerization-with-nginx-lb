@@ -125,7 +125,7 @@ redis      docker-entrypoint.sh redis ...   Up      6379/tcp
 
 ----
 ## Architecture
-![alt text](https://i.ibb.co/xm27sDZ/docker-ipstack.jpg)
+![alt text](https://i.ibb.co/DWR574g/docker-ipstack.jpg)
 
 ----
 ## Behind the code
