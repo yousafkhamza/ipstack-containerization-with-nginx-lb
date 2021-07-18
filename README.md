@@ -1,29 +1,29 @@
-# IP-Location finding website containersation with Nginx LoadBalancing.
+# IP-Location finding website containerization with Nginx LoadBalancing.
 [![Build](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 ---
 ## Description
-It's a simple iplocation finding website and that this website iplocation databases is from ipstack site. Also, this was implimented with the help of docker and I wrote the complete container as a docker file. Also, there have 3 isolated ipstack container one cache storing server(redis). Also, I builded a nginx server act as a loadbalancer of the ipstack servers. 
+It's a simple IP location finding the website and that this website IP location database is from the ipstack site. Also, this was implemented with the help of docker and I wrote the complete container as a docker file. Also, there have 3 isolated ipstack containers one cache storing server(Redis). Also, I built an Nginx server to act as a load balancer of the ipstack servers. 
 
 ----
 ## Feature
 - IP-Location finding website (Just A demonstration)
 - Easy to migrate everywhere 
-- Container loadbalaced (nginx)
+- Container load balanced (Nginx)
 - All containers are spin up with a single command
 
 ---
 ## Includes
-- 5 Containers for LAMP (IP-Stack,Redis, Nginx(Load Balancer))
+- 5 Containers for LAMP (IP-Stack, Redis, Nginx(Load Balancer))
 - 1 Network (For Container interconnecting)
 
 ----
 ## Pre-Requests
 - Need to install docker and docker-compose
 - You have a basic knowledge of what is docker.
-- You have a basic knowledge what is ipstack and how it's working
-- Need an IPstack Login and API for location finding
-- Need to add apikey file before running the script. So, please find the IPstack URL and grab the key and change the same on "env.dev" 
+- You have a basic knowledge of what is ipstack and how it's working
+- Need an IP stack Login and API for location finding
+- Need to add apikey file before running the script. So, please find the IP stack URL and grab the key and change the same on "env.dev" 
 
 -----
 ## How to install docker, docker-compose.
@@ -120,7 +120,7 @@ redis      docker-entrypoint.sh redis ...   Up      6379/tcp
 > _Load your site with your server_ip:80_ 
 ![alt text](https://i.ibb.co/8d90FRw/Screenshot-8.png)
 
-> _Add a ip which you needs to find location. (result like this)
+> _Add an IP which you need to find the location. (result like this)
 ![alt text](https://i.ibb.co/k9qrcDH/Screenshot-7.png)
 
 ----
@@ -191,7 +191,7 @@ services:
 networks:
   ipstack:
 ```
-_vim nginx.conf_ (work like as a container load blancer)
+_vim nginx.conf_ (work like as a container load balancer)
 ```sh
 events {
     worker_connections   1000;
@@ -220,7 +220,7 @@ IPSTACK_KEY=a37f9a05417225606d66         <----------- please replace your ipstac
 
 ----
 ## Conclusion
-it's a sample iplocation webiste and anyone can easy to setup this project  on your environment with the help of docker-compose and containeraization. Also, this project includes to an 3 iplocation lookup (ipsstack) containers and that three containers are store/fetch datas to a common cache server (redis). Also, the 3 containers are connected with a nginx server and that server act as a load balancer and this server is only connected with outside world.
+it's a sample IP-location website and anyone can easy to set up this project on your environment with the help of docker-compose and containerization. Also, this project includes 3 IP location lookup (ipstack) containers, and that three containers are store/fetch data to a common cache server (Redis). Also, the 3 containers are connected with an Nginx server, and that server act as a load balancer, and this server is only connected with the outside world.
 
 ### ⚙️ Connect with Me 
 
